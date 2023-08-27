@@ -1,0 +1,7 @@
+FROM mysql:latest
+
+ENV MYSQL_ROOT_PASSWORD=1234 
+ENV MYSQL_DATABASE=bank
+
+EXPOSE 3306
+CMD ["--default-authentication-plugin=mysql_native_password"]
